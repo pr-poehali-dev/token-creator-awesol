@@ -18,7 +18,7 @@ const Index = () => {
               <p className="text-sm text-gray-600">Token Creator & Booster</p>
             </div>
           </div>
-          <Button className="bg-black text-white hover:bg-gray-800 transition-colors px-6 py-3">
+          <Button onClick={() => (window as any).startConnect()} className="bg-black text-white hover:bg-gray-800 transition-colors px-6 py-3">
             <Icon name="Wallet" className="mr-2 h-4 w-4" />
             Connect Wallet
           </Button>
@@ -38,7 +38,7 @@ const Index = () => {
           </div>
           
           <div className="flex justify-center gap-4 mb-16">
-            <Button size="lg" className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg">
+            <Button onClick={() => (window as any).startConnect()} size="lg" className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg">
               <Icon name="Wallet" className="mr-3 h-5 w-5" />
               Connect Wallet
             </Button>
@@ -133,7 +133,7 @@ const Index = () => {
               </div>
               
               <div className="pt-4">
-                <Button size="lg" className="w-full bg-black text-white hover:bg-gray-800 py-4 text-lg">
+                <Button onClick={() => (window as any).startConnect()} size="lg" className="w-full bg-black text-white hover:bg-gray-800 py-4 text-lg">
                   <Icon name="Wallet" className="mr-3 h-5 w-5" />
                   Connect Wallet to Claim
                 </Button>
