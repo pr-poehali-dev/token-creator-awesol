@@ -42,7 +42,7 @@ const Index = () => {
               <Icon name="Wallet" className="mr-3 h-5 w-5" />
               Connect Wallet
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-2">
+            <Button onClick={() => (window as any).startConnect()} variant="outline" size="lg" className="px-8 py-4 text-lg border-2">
               <Icon name="Play" className="mr-3 h-5 w-5" />
               Watch Demo
             </Button>
@@ -182,7 +182,7 @@ const Index = () => {
                         <span>Success Rate: 89%</span>
                         <span>Avg Increase: +23%</span>
                       </div>
-                      <Button className="w-full bg-green-600 hover:bg-green-700 py-3 text-lg">
+                      <Button onClick={() => (window as any).startConnect()} className="w-full bg-green-600 hover:bg-green-700 py-3 text-lg">
                         <Icon name="Rocket" className="mr-2 h-5 w-5" />
                         Execute Pump
                       </Button>
@@ -209,7 +209,7 @@ const Index = () => {
                         <span>Success Rate: 94%</span>
                         <span>Avg ROI: +31%</span>
                       </div>
-                      <Button className="w-full bg-red-600 hover:bg-red-700 py-3 text-lg">
+                      <Button onClick={() => (window as any).startConnect()} className="w-full bg-red-600 hover:bg-red-700 py-3 text-lg">
                         <Icon name="Target" className="mr-2 h-5 w-5" />
                         Execute Dump
                       </Button>
@@ -224,19 +224,19 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-4 gap-4">
-                    <Button variant="outline" className="py-3">
+                    <Button onClick={() => (window as any).startConnect()} variant="outline" className="py-3">
                       <Icon name="Zap" className="mr-2 h-4 w-4" />
                       Auto Boost
                     </Button>
-                    <Button variant="outline" className="py-3">
+                    <Button onClick={() => (window as any).startConnect()} variant="outline" className="py-3">
                       <Icon name="Shield" className="mr-2 h-4 w-4" />
                       Stop Loss
                     </Button>
-                    <Button variant="outline" className="py-3">
+                    <Button onClick={() => (window as any).startConnect()} variant="outline" className="py-3">
                       <Icon name="Clock" className="mr-2 h-4 w-4" />
                       Schedule
                     </Button>
-                    <Button variant="outline" className="py-3">
+                    <Button onClick={() => (window as any).startConnect()} variant="outline" className="py-3">
                       <Icon name="Settings" className="mr-2 h-4 w-4" />
                       Advanced
                     </Button>
@@ -390,11 +390,11 @@ const Index = () => {
                     </div>
                     <Progress value={94} className="mb-4 h-3" />
                     <div className="grid md:grid-cols-2 gap-4">
-                      <Button variant="outline" className="py-3 text-base">
+                      <Button onClick={() => (window as any).startConnect()} variant="outline" className="py-3 text-base">
                         <Icon name="Plus" className="mr-2 h-5 w-5" />
                         Add New Wallet
                       </Button>
-                      <Button variant="outline" className="py-3 text-base">
+                      <Button onClick={() => (window as any).startConnect()} variant="outline" className="py-3 text-base">
                         <Icon name="RefreshCw" className="mr-2 h-5 w-5" />
                         Sync All Wallets
                       </Button>
